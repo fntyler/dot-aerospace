@@ -27,8 +27,17 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
     # launch new browser instance
     ctrl-cmd-shift-w = 'exec-and-forget open --new -a firefox'
+    
     # launch new browser instance (incognito/private)
     ctrl-cmd-shift-i = 'exec-and-forget open -a firefox --new --args -private-window'
+
+    # launch flameshot
+    ctrl-cmd-x = 'exec-and-forget open --new /Applications/flameshot.app --args gui'
+
+    # launch choose (dmenu/rofi)
+    ctrl-cmd-d = '''exec-and-forget ls /Applications/ /Applications/Utilities/ /System/Applications/ /System/Applications/Utilities/ | grep '\.app$' | sed 's/\.app$//g' | choose | xargs -I {} open -a "{}.app"'''
+    # kill focused window
+    ctrl-cmd-shift-q = 'close --quit-if-last-window'
 
     # i3 wraps focus by default
     ctrl-cmd-j =         'focus --boundaries-action wrap-around-the-workspace left'
