@@ -119,13 +119,9 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 # issue: missing up/down/left/right
 [mode.movedisplay.binding]
-   #h = 'move-workspace-to-monitor left'
    h = ['move-workspace-to-monitor left', 'mode main']
-   #j = 'move-workspace-to-monitor down'
    j = ['move-workspace-to-monitor down', 'mode main']
-   #k = 'move-workspace-to-monitor up'
    k = ['move-workspace-to-monitor up', 'mode main']
-   #l = 'move-workspace-to-monitor right'
    l = ['move-workspace-to-monitor right', 'mode main']
    enter = 'mode main'
    esc = 'mode main'
