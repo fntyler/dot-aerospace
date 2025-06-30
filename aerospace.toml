@@ -27,7 +27,13 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     #    activate
     #end tell'
     #'''
-    ctrl-cmd-enter=['''exec-and-forget osascript -e "do shell script \"/Applications/Alacritty.app/Contents/MacOS/alacritty &\"" ''', 'mode main']
+
+    # alactritty
+    #ctrl-cmd-enter=['''exec-and-forget osascript -e "do shell script \"/Applications/Alacritty.app/Contents/MacOS/alacritty &\"" ''', 'mode main']
+    ctrl-cmd-enter=['exec-and-forget open -n "Applications/Alacritty.app"','mode main']
+
+    # ghostty
+    #ctrl-cmd-enter=['exec-and-forget open -n "Applications/Ghostty.app"','mode main']
 
     # launch new browser instance
     ctrl-cmd-shift-w = 'exec-and-forget open --new -a firefox'
