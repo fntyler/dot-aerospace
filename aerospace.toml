@@ -1,7 +1,7 @@
 start-at-login = true
 
 after-startup-command = [
-    'exec-and-forget open --new /Applications/CopyQ.app'
+    'exec-and-forget open --new /Applications/CopyQ.app',
 ]
 
 # Reference: https://github.com/i3/i3/blob/next/etc/config
