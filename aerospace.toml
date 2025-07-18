@@ -13,8 +13,18 @@ after-startup-command = [
 enable-normalization-flatten-containers = false
 enable-normalization-opposite-orientation-for-nested-containers = false
 
+accordion-padding = 30
+
 # Mouse follows focus when focused monitor changes
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+# Possible values: tiles|accordion
+default-root-container-layout = 'tiles'
+
+# Possible values: horizontal|vertical|auto
+# 'auto' means: wide monitor (anything wider than high) gets horizontal orientation,
+#               tall monitor (anything higher than wide) gets vertical orientation
+default-root-container-orientation = 'auto'
 
 [key-mapping]
     preset = 'qwerty'
@@ -30,6 +40,7 @@ SH_FUZZMENU = "$HOME/dev/milwaukee/fuzzmenu.sh"
     #    activate
     #end tell'
     #'''
+    #All possible modifiers: cmd, alt, ctrl, shift
 
     # alactritty
     #ctrl-cmd-enter=['''exec-and-forget osascript -e "do shell script \"/Applications/Alacritty.app/Contents/MacOS/alacritty &\"" ''', 'mode main']
