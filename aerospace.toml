@@ -2,6 +2,7 @@ start-at-login = true
 
 after-startup-command = [
     'exec-and-forget open --new /Applications/CopyQ.app',
+    'exec-and-forget borders active_color=0xffffffff inactive_color=0xff494d64 width=8.0',
 ]
 
 # Reference: https://github.com/i3/i3/blob/next/etc/config
