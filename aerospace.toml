@@ -38,8 +38,8 @@ default-root-container-orientation = 'auto'
 [key-mapping]
     preset = 'qwerty'
 
-[exec.env-vars]
-SH_FUZZMENU = "$HOME/dev/milwaukee/fuzzmenu.sh"
+#[exec.env-vars]
+#    SH_FUZZMENU = "$HOME/dev/milwaukee/fuzzmenu.sh"
 
 [mode.main.binding]
     # See: https://nikitabobko.github.io/AeroSpace/goodies#open-a-new-window-with-applescript
@@ -83,7 +83,7 @@ SH_FUZZMENU = "$HOME/dev/milwaukee/fuzzmenu.sh"
         -n /Applications/Alacritty.app \
         --args \
         --title FuzzMenu \
-        --command $SH_FUZZMENU\
+        --command /Users/tyler/dev/milwaukee/fuzzmenu.sh\
         '''
 
     # kill focused window
