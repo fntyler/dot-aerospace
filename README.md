@@ -17,3 +17,5 @@ sudo ln -s /Users/<local_name>/<dir_name>/<repo_name> /Users/<local_name>/.confi
 ## Ref
 
 [JankyBorders](https://github.com/FelixKratz/JankyBorders) for basic borders for focused windows.
+
+TODO: create active window selector
