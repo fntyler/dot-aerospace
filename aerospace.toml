@@ -78,8 +78,7 @@ default-root-container-orientation = 'auto'
         | xargs -I {} open -a "{}.app"'''
 
     # launch "milwaukee/fuzzmenu.sh"
-    ctrl-cmd-shift-o = '''\
-        exec-and-forget open \
+    ctrl-cmd-shift-o = '''exec-and-forget open \
         -n /Applications/Alacritty.app \
         --args \
         --title FuzzMenu \
