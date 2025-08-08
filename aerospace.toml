@@ -59,13 +59,13 @@ default-root-container-orientation = 'auto'
     #ctrl-cmd-enter=['exec-and-forget open -n "Applications/Ghostty.app"','mode main']
 
     # launch new browser instance
-    ctrl-cmd-shift-w = 'exec-and-forget open --new -a firefox'
+    ctrl-cmd-shift-w = 'exec-and-forget open -n -a firefox'
     
     # launch new browser instance (incognito/private)
-    ctrl-cmd-shift-i = 'exec-and-forget open -a firefox --new --args -private-window'
+    ctrl-cmd-shift-i = 'exec-and-forget open -a firefox -n --args -private-window'
 
     # launch flameshot
-    ctrl-cmd-x = 'exec-and-forget open --new /Applications/flameshot.app --args gui'
+    ctrl-cmd-x = 'exec-and-forget open -a /Applications/flameshot.app -n --args gui'
 
     # launch choose (dmenu/rofi)
     ctrl-cmd-d = '''exec-and-forget ls /Applications/ \
