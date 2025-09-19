@@ -2,9 +2,14 @@ start-at-login = true
 
 after-startup-command = [
     'exec-and-forget open --new /Applications/CopyQ.app',
+    'exec-and-forget sketchybar',
     'exec-and-forget borders active_color=0xffffffff inactive_color=0xff494d64 width=8.0',
 ]
 
+# Notify Sketchybar about workspace change
+exec-on-workspace-change = ['/bin/bash', '-c',
+    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+]
 # Reference: https://github.com/i3/i3/blob/next/etc/config
 
 # i3 doesn't have "normalizations" feature that why we disable them here.
@@ -31,9 +36,13 @@ default-root-container-orientation = 'auto'
     inner.horizontal = 4
     inner.vertical =   4
     outer.left =       4
-    outer.bottom =     3
+    outer.bottom =     35
     outer.top =        3
     outer.right =      4
+
+
+# option is invalid on current version (?)
+#automatically-unhide-macos-hidden-apps = false
 
 [key-mapping]
     preset = 'qwerty'
