@@ -62,7 +62,8 @@ default-root-container-orientation = 'auto'
     #ctrl-cmd-enter=['exec-and-forget open -n "Applications/Ghostty.app"','mode main']
 
     # launch new browser instance
-    ctrl-cmd-shift-w = 'exec-and-forget open -n -a firefox'
+    #ctrl-cmd-shift-w = 'exec-and-forget open -a zen -n --args -new-window'
+    ctrl-cmd-shift-w = 'exec-and-forget open -n -a firefox --args -new-window'
     
     # launch new browser instance (incognito/private)
     ctrl-cmd-shift-i = 'exec-and-forget open -a firefox -n --args -private-window'
