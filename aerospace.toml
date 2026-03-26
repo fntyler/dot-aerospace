@@ -95,11 +95,12 @@ default-root-container-orientation = 'auto'
     # kill focused window
     ctrl-cmd-shift-q = 'close --quit-if-last-window'
 
-    # i3 wraps focus by default
-    ctrl-cmd-j =         'focus --boundaries-action wrap-around-the-workspace left'
-    ctrl-cmd-k =         'focus --boundaries-action wrap-around-the-workspace down'
-    ctrl-cmd-l =         'focus --boundaries-action wrap-around-the-workspace up'
-    ctrl-cmd-semicolon = 'focus --boundaries-action wrap-around-the-workspace right'
+    # i3-like focus behavior
+    # https://nikitabobko.github.io/AeroSpace/commands#focus
+    ctrl-cmd-j =         'focus --boundaries all-monitors-outer-frame --boundaries-action stop left'
+    ctrl-cmd-k =         'focus --boundaries all-monitors-outer-frame --boundaries-action stop down'
+    ctrl-cmd-l =         'focus --boundaries all-monitors-outer-frame --boundaries-action stop up'
+    ctrl-cmd-semicolon = 'focus --boundaries all-monitors-outer-frame --boundaries-action stop right'
 
     ctrl-cmd-shift-j = 'move left'
     ctrl-cmd-shift-k = 'move down'
