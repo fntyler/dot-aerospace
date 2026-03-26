@@ -102,10 +102,12 @@ default-root-container-orientation = 'auto'
     ctrl-cmd-l =         'focus --boundaries all-monitors-outer-frame --boundaries-action stop up'
     ctrl-cmd-semicolon = 'focus --boundaries all-monitors-outer-frame --boundaries-action stop right'
 
-    ctrl-cmd-shift-j = 'move left'
-    ctrl-cmd-shift-k = 'move down'
-    ctrl-cmd-shift-l = 'move up'
-    ctrl-cmd-shift-semicolon = 'move right'
+    # i3-like move behavior
+    # https://nikitabobko.github.io/AeroSpace/commands#move
+    ctrl-cmd-shift-j = 'move --boundaries all-monitors-outer-frame --boundaries-action stop left'
+    ctrl-cmd-shift-k = 'move --boundaries all-monitors-outer-frame --boundaries-action stop down'
+    ctrl-cmd-shift-l = 'move --boundaries all-monitors-outer-frame --boundaries-action stop up'
+    ctrl-cmd-shift-semicolon = 'move --boundaries all-monitors-outer-frame --boundaries-action stop right'
 
     # Consider using 'join-with' command as a 'split' replacement if you want to enable
     # normalizations
