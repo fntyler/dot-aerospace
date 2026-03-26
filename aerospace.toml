@@ -24,6 +24,9 @@ accordion-padding = 30
 # Mouse follows focus when focused monitor changes
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
+# Move mouse to the center of the focused window
+on-focus-changed = ['move-mouse window-lazy-center']
+
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
 
